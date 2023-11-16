@@ -1,23 +1,18 @@
-﻿using Microsoft.VisualBasic.CompilerServices;
-using SimpleGameOfLife;
+﻿using SimpleGameOfLife;
 
 Game.Run();
 
 
 /*
-
-Pause til 13:35
-
-
     Mål: "Bli komfortabel med C#" - mestre det dere kan fra JavaScript i C#
 
     Noen ting som er annerledes: 
      - arrays
      - overloads og default parametre
-     - casting, parse og enum
+     - casting og enum
      - klassevariable
-    - using
-    - public/private
+     - using
+     - public/private
  - oppsumering av matten?
 
     Game of life

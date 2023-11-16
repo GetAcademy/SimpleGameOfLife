@@ -8,6 +8,8 @@
 
         public static void Run()
         {
+            Console.ForegroundColor = ConsoleColor.DarkBlue;
+            Console.BackgroundColor = ConsoleColor.White;
             _columnCount = Console.WindowWidth;
             _rowCount = Console.WindowHeight - 1;
             var cellCount = _columnCount * _rowCount;
@@ -18,6 +20,13 @@
             {
                 Console.Clear();
                 Console.WriteLine(_cells);
+                //int color = 0;
+                //foreach (var cell in _cells)
+                //{
+                //    color = (color + 1) % 16;
+                //    Console.ForegroundColor = (ConsoleColor)color;
+                //    Console.Write(cell);
+                //}
                 Thread.Sleep(40);
                 Update();
             }
@@ -72,22 +81,6 @@
                 cells[i] = isAlive ? 'O' : ' ';
             }
             return cells;
-        }
-
-        /*
-           var name = Console.ReadLine();
-           if(name.Length>0) Greet(name);
-           else Greet();
-         */
-
-        static void Greet(string name)
-        {
-            Console.WriteLine($"Hei, {name}!");
-        }
-
-        static void Greet()
-        {
-            Console.WriteLine($"Hei på deg!");
         }
     }
 }
