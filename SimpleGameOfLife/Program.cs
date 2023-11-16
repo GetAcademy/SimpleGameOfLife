@@ -1,10 +1,12 @@
-﻿using SimpleGameOfLife;
+﻿using Microsoft.VisualBasic.CompilerServices;
+using SimpleGameOfLife;
 
 Game.Run();
 
+
 /*
 
-Pause til 13:03
+Pause til 13:35
 
 
     Mål: "Bli komfortabel med C#" - mestre det dere kan fra JavaScript i C#
@@ -14,6 +16,9 @@ Pause til 13:03
      - overloads og default parametre
      - casting, parse og enum
      - klassevariable
+    - using
+    - public/private
+ - oppsumering av matten?
 
     Game of life
     "simulering av celler, liv"
